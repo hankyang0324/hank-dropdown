@@ -1,0 +1,34 @@
+<form [formGroup]="dropDownForm" (ngSubmit)="onSubmit()">
+  <hank-dropdown 
+    id='name'
+    formControlName='name' 
+    placeholder='search name' 
+    [options]='nameOptions'
+    (selected)="showSelected($event)">
+    <div>name</div>
+  </hank-dropdown>
+  <hank-dropdown 
+    id='group'
+    max-height='150'
+    formControlName='group' 
+    placeholder='search group' 
+    [options]='groupOptions'
+    (selected)="showSelected($event)">
+    <div>group</div>
+  </hank-dropdown>
+  <hank-dropdown 
+    id='color' 
+    width='250'
+    formControlName='color' 
+    placeholder='search color' 
+    [options]='colorOptions'
+    (selected)="showSelected($event)"
+    disabled=true>
+    <div>color</div>
+  </hank-dropdown>
+  <button type="submit">Submit</button>
+</form>
+
+<p>selected name: {{ selected['name'] }}</p>
+<p>selected group: {{ selected['group'] }}</p>
+<p>selected color: {{ selected['color'] }}</p>

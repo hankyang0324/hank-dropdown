@@ -1,0 +1,23 @@
+{
+  "name": "hank-dropdown",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0",
+    "@angular/animations": "^7.1.0",
+    "@angular/forms": "7.1.0"
+  },
+  "main": "bundles/hank-dropdown.umd.js",
+  "module": "fesm5/hank-dropdown.js",
+  "es2015": "fesm2015/hank-dropdown.js",
+  "esm5": "esm5/hank-dropdown.js",
+  "esm2015": "esm2015/hank-dropdown.js",
+  "fesm5": "fesm5/hank-dropdown.js",
+  "fesm2015": "fesm2015/hank-dropdown.js",
+  "typings": "hank-dropdown.d.ts",
+  "metadata": "hank-dropdown.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
